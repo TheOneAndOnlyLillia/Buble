@@ -1,1 +1,1 @@
-I'm working on an application that has a collectionof different stories of businesses and their journies of launching their businesses off the ground. It would allow newer entrepeneurs to gain advice and leanr from the stories of others.
+I'm working on an application that has a collection of different stories of businesses and their journies of launching their businesses off the ground. It would allow newer entrepeneurs to gain advice and learn from the stories of others. Even if you aren't a business owner it has many different stories that are interesting to read. 
