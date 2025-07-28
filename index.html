@@ -1,16 +1,109 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel = "stylesheet" href = "style.css"/>
+    <title> BUBLE </title>
+<link rel="stylesheet" href="styles.css"
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, inital-scale=1">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+h2 {text-align: center;}
+h3 {text-align: center;}
+h5 {text-align: center;}
+
+* {
+    box-sizing: border-box;
+
+}        
+
+body {
+    font-family: 'Coiny'
+    
+}
+</style>
 </head>
-<title>
-    <h1 style="text-align: left;">
-        Buble
-    </h1> 
-</title>
+<body>
 
-<div class = "circle">
-    <span> Microsoft Success Story</span>
+<div class="header">
+    <h1>BUBLE</h1>
+    <p> Beta version of business story website</p>
+
 </div>
 
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="notifications.html">Notifications</a>
+    <a href="followedbusinesses.html">Followed Businesses</a>
+    <a href="profile.html" class="right">Profile</a>
+</div>
 
+<div class="row">
+    <div class="side">
+        <h2>Search Bar</h2>
+        <h5>Key names and businesses</h5>
+        <img src="data:image/png;base64,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" height="100" width="400">
+        <p></p> 
+        <h3>Business stocks you follow</h3>
+        <p>Will be linked to live feed soon :) </p>  
+        <p style="text-align: center;">APPL (Apple)</p>
+        <img src="data:image/png;base64,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" alt="Apple Stocks" width ="400" height="200">
+        <p style="text-align: center;"> SBUX (Starbucks)</p>
+        <img src="https://media.ycharts.com/charts/11e6450bfb24ef024dd92027bc61f346.png" width="400" height="200">
+        <p style="text-align: center;">GOOG (Google)</p>
+        <img src="https://s3.tradingview.com/8/8o6S5KSz_mid.png" width="400" height="200">
+    </div>
+    <div class="main">
+        <h2>Business Stories Feed</h2>
+        <h5> Top Stories</h5>
+        <div class="row">
+            <div class="column" style="background-color:#ffffff;">
+                <div class="circle" style="text-align: center;">
+                    <a href="starbucks.html">Starbucks</a>
+                   
+                </div>
+                <p></p>
+                <div class="circle" style="text-align: center;">
+                    <a href="burtsbees.html">Burt's Bees</a>
+                </div>
+                
+            </div>
+            <div class="column" style="background-color:#fffefe;">
+                <div class="circle" style="text-align: center;">
+                    <a href="google.html"> Google Story</a>
+                </div>
+                <p></p>
+                <div class="circle" style="text-align: center;">
+                    <a href="microsoft.html">Microsoft Story</a>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+    
+
+</div>
+
+<div class="footer">
+    <h2>Buble Corporation 2025 All Rights Reserved
+    </h2>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
